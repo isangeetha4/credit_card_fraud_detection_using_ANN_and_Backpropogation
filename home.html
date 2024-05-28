@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Credit Card Fraud Detection</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+background-color:  #111;
+    }
+
+   header {
+    background-color:  #111; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #222; /* Thin border with a darker shade of black */
+}
+
+
+    .dashboard {
+        float: left;
+        width: 200px;
+        background: linear-gradient(#333, #222); /* Linear gradient background */
+        height: 100vh;
+    }
+
+    .dashboard ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .dashboard ul li {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .dashboard ul li:hover {
+        background-color: #1b1b1b;
+        color: white; /* Change text color on hover */
+        border: 1px solid #339933; /* Change border color on hover */
+        box-shadow: 0 0 5px rgba(0,255,0,.3),
+                    0 0 10px rgba(0,255,0,.2),
+                    0 0 15px rgba(0,255,0,.1),
+                    0 2px 0 black;
+    }
+
+    .dashboard ul li a {
+        color: white; /* Set link text color to black */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .content {
+        margin-left: 200px;
+        text-align: center;
+    }
+
+    .content img {
+        width: 100%; /* Width of the viewport */
+        height: 80vh;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Credit Card Fraud Detection</h1>
+    </header>
+
+    <div class="dashboard">
+        <ul>
+            <li class="hover"><a href="/transactions">Fraud Analysis</a></li>
+            <li class="hover"><a href="/graph_output">Graph Output</a></li>
+        </ul>
+    </div>
+  
+    <div class="content">
+        <img src="{{ url_for('static', filename='credit_card_img.png') }}" alt="Credit Card Image">
+    </div>
+</body>
+</html>

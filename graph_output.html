@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph Output Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 50px; /* Add padding to the top of the body */
+            font-family: Arial, sans-serif;
+            background-color: black; /* Set background color to black */
+            color: white; /* Set default text color to white */
+        }
+
+        .container {
+            width: 80%; /* Set width of container */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px; /* Add padding to the container */
+            text-align: center;
+            border: 3px solid #339933; /* Green glow border */
+            box-shadow: 0 0 10px rgba(0, 255, 0, .5), /* Inner green glow effect */
+                        0 0 20px rgba(0, 255, 0, .3), 
+                        0 0 30px rgba(0, 255, 0, .2);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        img {
+            margin-top: 20px;
+            width: 500px; /* Adjust width of the images */
+            height: 200; /* Maintain aspect ratio */
+            border: 1px solid #111; /* Border color */
+            transition: box-shadow 0.3s; /* Smooth transition for box-shadow */
+        }
+
+        img:hover {
+            box-shadow: 0 0 5px rgba(0, 255, 0, .3),
+                        0 0 10px rgba(0, 255, 0, .2),
+                        0 0 15px rgba(0, 255, 0, .1),
+                        0 2px 0 black; /* Glow effect on hover */
+        }
+
+        .header {
+            background-color: grey; /* Header background color */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Graph Analysis</h1> <!-- Header with white text -->
+        <!-- Display loss images -->
+        <img src="{{ url_for('static', filename='loss_1.png') }}" alt="Loss 1">
+        <img src="{{ url_for('static', filename='loss_2.png') }}" alt="Loss 2">
+    </div>
+</body>
+</html>

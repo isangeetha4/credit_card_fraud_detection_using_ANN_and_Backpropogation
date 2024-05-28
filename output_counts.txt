@@ -1,0 +1,5 @@
+True Positives (Fraud transactions correctly classified): 87
+False Positives (Legitimate transactions incorrectly classified as fraud): 1
+True Negatives (Legitimate transactions correctly classified): 147
+False Negatives (Fraud transactions incorrectly classified as legitimate): 11
+accuracy: 0.9512195121951219
